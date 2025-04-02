@@ -9,9 +9,11 @@ const Hero = () => {
         <h1 className="text-white">
           Dăm viață momentelor importante din viața ta!
         </h1>
-        <Button size={"lg"} className="font-semibold">
-          Contactează-ne
-        </Button>
+        <a href="tel:0756805732">
+          <Button size={"lg"} className="font-semibold">
+            0756.805.732
+          </Button>
+        </a>
       </div>
     </div>
   );
