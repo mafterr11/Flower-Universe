@@ -16,7 +16,7 @@ const FixedSocials = () => {
       </a>
 
       {/* Facebook Button */}
-      <a href="https://www.facebook.com/floweruniversero">
+      <a href="https://www.facebook.com/floweruniversero" target="_blank">
         <div className="group relative flex items-center bg-accent rounded-full overflow-hidden transition-all duration-300 cursor-pointer w-14 hover:w-40">
           <div className="w-14 h-14 flex items-center justify-center">
             <LuFacebook size={30} color="white" />
