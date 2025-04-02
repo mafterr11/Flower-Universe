@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-24 gap-y-32 xl:w-[80%] mx-auto max-md:px-3">
+    <div className="flex flex-col items-center justify-center pt-24 pb-[15rem] gap-y-32 xl:w-[80%] mx-auto max-md:px-3">
       {" "}
       {/* Set a height */}
       <h2>Despre noi</h2>
