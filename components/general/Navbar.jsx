@@ -35,7 +35,7 @@ export default function Navbar() {
         className="bg-white/80 backdrop-blur-md shadow-xl rounded-full px-8 py-4 flex  items-center space-x-6 md:space-x-10 border border-pink-100"
       >
         {/* Mobile toggle button */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center">
           <button onClick={() => setIsOpen(!isOpen)} className="text-rose-600">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>

@@ -2,7 +2,7 @@ import { LuFacebook, LuInstagram } from "react-icons/lu";
 
 const FixedSocials = () => {
   return (
-    <div className="fixed bottom-10 right-10 flex flex-col gap-y-3 items-end">
+    <div className="fixed max-md:bottom-5 max-md:right-5 bottom-10 right-10 flex flex-col gap-y-3 items-end">
       {/* Instagram Button */}
       <a href="https://www.instagram.com/flower_universe_ro" target="_blank">
         <div className="group relative flex items-center bg-accent rounded-full overflow-hidden transition-all duration-300 cursor-pointer w-14 hover:w-40">
