@@ -1,5 +1,7 @@
-import {  Cinzel, Source_Sans_3 } from "next/font/google";
+import { Cinzel, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/general/Navbar";
+import { LuInstagram } from "react-icons/lu";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel-sans",
@@ -22,9 +24,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cinzel.variable} ${sourceSans3.variable} antialiased`}
+        className={`${cinzel.variable} ${sourceSans3.variable} antialiased relative`}
       >
+        <Navbar />
         {children}
+        <div className="fixed bottom-10 right-10 z-50">
+          <div className="bg-accent p-3 rounded-full">
+            <LuInstagram size={35} color="white"/>
+          </div>
+        </div>
       </body>
     </html>
   );
