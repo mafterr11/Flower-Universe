@@ -29,8 +29,9 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <div className="fixed bottom-10 right-10 z-50">
-          <div className="bg-accent p-3 rounded-full">
-            <LuInstagram size={35} color="white"/>
+          <div className="bg-accent p-3 rounded-full hover:w-fit transition-all ease-in-out duration-300 cursor-pointer group flex">
+            <LuInstagram size={35} color="white" />
+            <p className="hidden group-hover:block relative text-white font-medium">Instagram</p>
           </div>
         </div>
       </body>
