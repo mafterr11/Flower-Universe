@@ -21,12 +21,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-6 left-1/2 z-50 -translate-x-1/2 transform">
+    <header className="fixed top-6 left-1/2 z-50 -translate-x-1/2 transform w-[46rem] ">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="flex items-center space-x-6 rounded-full border border-pink-100 bg-white/80 px-8 py-4 shadow-xl backdrop-blur-md md:space-x-10"
+        className="flex items-center justify-center space-x-6 rounded-full border  border-pink-100 bg-white/80 px-8 py-4 shadow-xl backdrop-blur-md md:space-x-10"
       >
         {/* Mobile toggle button */}
         <div className="flex items-center md:hidden">
