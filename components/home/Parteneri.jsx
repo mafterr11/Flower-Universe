@@ -19,16 +19,16 @@ const parteneri = [
 ];
 const Parteneri = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-24 pb-[15rem] gap-y-32 max-md:gap-y-24 xl:w-[80%] mx-auto max-md:px-3">
+    <div className="mx-auto flex flex-col items-center justify-center gap-y-32 pt-24 pb-[15rem] max-md:gap-y-24 max-md:px-3 xl:w-[80%]">
       <h2 className="text-center">Partenerii noștri</h2>
-      <div className="flex max-md:flex-col max-md:gap-y-12 items-center justify-between w-[65%]">
+      <div className="flex w-[65%] items-center justify-between max-md:flex-col max-md:gap-y-12">
         {parteneri.map((partener, index) => (
           <a href={partener.link} key={index} target="_blank">
-            <div className="relative max-md:w-[100px] max-md:h-[100px] w-[150px] h-[150px] ">
+            <div className="relative h-[150px] w-[150px] max-md:h-[100px] max-md:w-[100px]">
               <Image
                 src={partener.img}
                 alt={partener.alt}
-                className="object-cover rounded-full"
+                className="rounded-full object-cover"
                 fill
               />
             </div>

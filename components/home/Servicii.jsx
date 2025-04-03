@@ -16,9 +16,9 @@ const servicii = [
 ];
 const Servicii = () => {
   return (
-    <div className=" bg-[#ac3333] relative">
-      <div className="bg-black/40 inset-0 absolute" />
-      <div className="relative flex flex-col items-center justify-center gap-y-24 text-white py-[8rem]">
+    <div className="relative bg-[#ac3333]">
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="relative flex flex-col items-center justify-center gap-y-24 py-[8rem] text-white">
         <h2>Ne ocupăm de tot</h2>
         <div className="flex items-center justify-center gap-24 max-md:flex-col">
           {servicii.map((serviciu, index) => (
@@ -26,15 +26,15 @@ const Servicii = () => {
               key={index}
               className="flex flex-col items-center justify-center gap-y-4"
             >
-              <div className="relative max-md:w-[300px] max-md:h-[300px] w-[400px] h-[400px] ">
+              <div className="relative h-[400px] w-[400px] max-md:h-[300px] max-md:w-[300px]">
                 <Image
                   src={serviciu.img}
                   alt={serviciu.titlu}
-                  className="object-cover rounded-full"
+                  className="rounded-full object-cover"
                   fill
                 />
               </div>
-              <h3 className="font-semibold text-xl max-w-sm text-center">
+              <h3 className="max-w-sm text-center text-xl font-semibold">
                 {serviciu.titlu}
               </h3>
             </div>

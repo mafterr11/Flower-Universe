@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-24 pb-[15rem] gap-y-32 xl:w-[80%] mx-auto max-md:px-3">
+    <div className="mx-auto flex flex-col items-center justify-center gap-y-32 pt-24 pb-[15rem] max-md:px-3 xl:w-[80%]">
       {" "}
       {/* Set a height */}
       <h2>Despre noi</h2>
       <div className="flex max-md:flex-col max-md:gap-y-5">
         {/* Image Section */}
-        <div className="relative xl:w-1/2 h-[500px]">
+        <div className="relative h-[500px] xl:w-1/2">
           <Image
             src="/about.webp"
             alt="about section"
@@ -17,9 +17,9 @@ const About = () => {
           />
         </div>
         {/* Text Section */}
-        <div className="xl:w-1/2 flex items-start justify-center xl:px-8">
+        <div className="flex items-start justify-center xl:w-1/2 xl:px-8">
           <div className="flex flex-col gap-y-2">
-            <p className="text-lg ">
+            <p className="text-lg">
               <span className="text-accent text-xl">•</span> Dragilor, vă urez
               să aveți parte de începuturi pline de reușite și de bucurii
               zilnice! Cu această ocazie, vreau să vă povestesc puțin despre

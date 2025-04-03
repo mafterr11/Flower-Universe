@@ -3,9 +3,9 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-hero bg-cover bg-no-repeat relative flex items-center justify-center z-0">
+    <div className="bg-hero relative z-0 flex h-screen items-center justify-center bg-cover bg-no-repeat">
       <div className="absolute inset-0 bg-black/20" />
-      <div className="relative  max-w-5xl text-center font-cinzel-sans flex items-center justify-center flex-col gap-y-5">
+      <div className="font-cinzel-sans relative flex max-w-5xl flex-col items-center justify-center gap-y-5 text-center">
         <h1 className="text-white">
           Dăm viață momentelor importante din viața ta!
         </h1>
