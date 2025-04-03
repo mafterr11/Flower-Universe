@@ -58,17 +58,47 @@ export default function Navbar() {
                   <ul className="grid w-48 gap-3">
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/magazin/categorii">Categorii</Link>
+                        <Link href="/magazin/buchete-de-mireasa">
+                          Buchete de mireasă
+                        </Link>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/magazin/oferte">Oferte</Link>
+                        <Link href="/magazin/seturi-de-lumanari">
+                          Seturi de lumânări
+                        </Link>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/magazin/noutati">Noutăți</Link>
+                        <Link href="/magazin/accesorii-florale">
+                          Accesorii florale
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/magazin/papetarie">Papetărie</Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/magazin/decoratiuni-de-craciun">
+                          Decorațiuni de Crăciun
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/magazin/aranjamente-de-masa">
+                          Aranjamente de masă
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <NavigationMenuLink asChild>
+                        <Link href="/magazin/photocorner">Photocorner</Link>
                       </NavigationMenuLink>
                     </li>
                   </ul>
@@ -105,21 +135,17 @@ export default function Navbar() {
                   <ul className="grid w-56 gap-3">
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/planificare/calendar">
-                          Calendar Evenimente
-                        </Link>
+                        <Link href="/planificare/nunti">Nunți</Link>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/planificare/servicii">
-                          Servicii Disponibile
-                        </Link>
+                        <Link href="/planificare/botezuri">Botezuri</Link>
                       </NavigationMenuLink>
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link href="/planificare/consultanta">Consultanță</Link>
+                        <Link href="/planificare/corporate">Corporate</Link>
                       </NavigationMenuLink>
                     </li>
                   </ul>
