@@ -53,9 +53,13 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent px-2 text-base font-medium">
-                  Magazin
+              <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
+                <NavigationMenuTrigger 
+                className="bg-transparent px-2 text-base relative font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
+                  <Link href={"/magazin"}>
+                  Magazin</Link>
                 </NavigationMenuTrigger>
+                  </motion.div>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                     {/* Left side featured card */}
@@ -127,9 +131,13 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent px-2 text-base font-medium">
+              <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
+                <NavigationMenuTrigger className="bg-transparent px-2 text-base relative font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
+                <Link href={"/planificare"}>
                   Planificare
+                </Link>
                 </NavigationMenuTrigger>
+              </motion.div>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
                   <ul className="grid w-56 gap-3">
                     <ListItem href="/planificare/nunti" title="Nunți" />
