@@ -14,6 +14,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { ListItem } from "./ListItem";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +41,7 @@ export default function Navbar() {
             className="relative"
           >
             <Link
-              href="/acasa"
+              href="/"
               className="relative font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full"
             >
               Acasa
@@ -55,52 +56,49 @@ export default function Navbar() {
                   Magazin
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
-                  <ul className="grid w-48 gap-3">
-                    <li>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                    {/* Left side featured card */}
+                    <li className="row-span-3">
                       <NavigationMenuLink asChild>
-                        <Link href="/magazin/buchete-de-mireasa">
-                          Buchete de mireasă
+                        <Link
+                          href="/magazin"
+                          className="flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b from-rose-100 to-white p-6 no-underline transition outline-none select-none hover:shadow-md"
+                        >
+                          <div className="text-accent mt-4 mb-2 text-lg font-semibold">
+                            Magazinul nostru
+                          </div>
+                          <p className="text-sm leading-tight text-gray-600">
+                            Descoperă o colecție unică de buchete, decorațiuni
+                            și accesorii florale, perfect alese pentru
+                            evenimente speciale.
+                          </p>
                         </Link>
                       </NavigationMenuLink>
                     </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/magazin/seturi-de-lumanari">
-                          Seturi de lumânări
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/magazin/accesorii-florale">
-                          Accesorii florale
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/magazin/papetarie">Papetărie</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/magazin/decoratiuni-de-craciun">
-                          Decorațiuni de Crăciun
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/magazin/aranjamente-de-masa">
-                          Aranjamente de masă
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/magazin/photocorner">Photocorner</Link>
-                      </NavigationMenuLink>
-                    </li>
+
+                    {/* Right side list items */}
+                    <ListItem
+                      href="/magazin/buchete-de-mireasa"
+                      title="Buchete de mireasă"
+                    />
+                    <ListItem
+                      href="/magazin/seturi-de-lumanari"
+                      title="Seturi de lumânări"
+                    />
+                    <ListItem
+                      href="/magazin/accesorii-florale"
+                      title="Accesorii florale"
+                    />
+                    <ListItem href="/magazin/papetarie" title="Papetărie" />
+                    <ListItem
+                      href="/magazin/decoratiuni-de-craciun"
+                      title="Decorațiuni de Crăciun"
+                    />
+                    <ListItem
+                      href="/magazin/aranjamente-de-masa"
+                      title="Aranjamente de masă"
+                    />
+                    <ListItem href="/magazin/photocorner" title="Photocorner" />
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -111,7 +109,7 @@ export default function Navbar() {
         {/* Center logo */}
         <motion.div
           whileHover={{ scale: 1.1, rotate: 1 }}
-          className="font-serif text-xl tracking-wider text-rose-600 md:text-2xl"
+          className="font-serif text-xl tracking-wider text-rose-700 md:text-2xl"
         >
           <Link href={"/"} className="flex items-center">
             Flower
@@ -133,21 +131,9 @@ export default function Navbar() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
                   <ul className="grid w-56 gap-3">
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planificare/nunti">Nunți</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planificare/botezuri">Botezuri</Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link href="/planificare/corporate">Corporate</Link>
-                      </NavigationMenuLink>
-                    </li>
+                    <ListItem href="/planificare/nunti" title="Nunți" />
+                    <ListItem href="/planificare/botezuri" title="Botezuri" />
+                    <ListItem href="/planificare/corporate" title="Corporate" />
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
