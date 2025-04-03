@@ -21,12 +21,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-6 left-1/2 z-50 -translate-x-1/2 transform w-[46rem] ">
+    <header className="fixed top-6 left-1/2 z-50 w-[46rem] -translate-x-1/2 transform">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="flex items-center justify-center space-x-6 rounded-full border  border-pink-100 bg-white/80 px-8 py-4 shadow-xl backdrop-blur-md md:space-x-10"
+        className="flex items-center justify-center space-x-6 rounded-full border border-pink-100 bg-white/80 px-8 py-4 shadow-xl backdrop-blur-md md:space-x-10"
       >
         {/* Mobile toggle button */}
         <div className="flex items-center md:hidden">
@@ -53,13 +53,11 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-              <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
-                <NavigationMenuTrigger 
-                className="bg-transparent px-2 text-base relative font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
-                  <Link href={"/magazin"}>
-                  Magazin</Link>
-                </NavigationMenuTrigger>
-                  </motion.div>
+                <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
+                  <NavigationMenuTrigger className="relative bg-transparent px-2 text-base font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
+                    <Link href={"/magazin"}>Magazin</Link>
+                  </NavigationMenuTrigger>
+                </motion.div>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
                   <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                     {/* Left side featured card */}
@@ -131,13 +129,11 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-              <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
-                <NavigationMenuTrigger className="bg-transparent px-2 text-base relative font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
-                <Link href={"/planificare"}>
-                  Planificare
-                </Link>
-                </NavigationMenuTrigger>
-              </motion.div>
+                <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
+                  <NavigationMenuTrigger className="relative bg-transparent px-2 text-base font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
+                    <Link href={"/planificare"}>Planificare</Link>
+                  </NavigationMenuTrigger>
+                </motion.div>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
                   <ul className="grid w-56 gap-3">
                     <ListItem href="/planificare/nunti" title="Nunți" />
