@@ -161,22 +161,113 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="mt-4 space-y-4 rounded-xl bg-white/80 p-6 text-center shadow-xl backdrop-blur-md"
+            className="mt-4 space-y-4 rounded-xl bg-white/80 p-6 text-left shadow-xl backdrop-blur-md"
           >
-            {[
-              { label: "Acasa", href: "/acasa" },
-              { label: "Magazin", href: "/magazin" },
-              { label: "Planificare", href: "/planificare" },
-              { label: "Contact", href: "/contact" },
-            ].map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="block text-lg transition"
-              >
-                {item.label}
-              </Link>
-            ))}
+            <Link
+              href="/"
+              className="block text-lg font-medium text-gray-700 transition hover:text-rose-500"
+            >
+              Acasa
+            </Link>
+
+            <div>
+              <p className="text-lg font-medium text-gray-700">Magazin</p>
+              <ul className="mt-1 ml-4 space-y-1">
+                <li>
+                  <Link
+                    href="/magazin/buchete-de-mireasa"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Buchete de mireasă
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/magazin/seturi-de-lumanari"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Seturi de lumânări
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/magazin/accesorii-florale"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Accesorii florale
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/magazin/papetarie"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Papetărie
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/magazin/decoratiuni-de-craciun"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Decorațiuni de Crăciun
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/magazin/aranjamente-de-masa"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Aranjamente de masă
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/magazin/photocorner"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Photocorner
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-lg font-medium text-gray-700">Planificare</p>
+              <ul className="mt-1 ml-4 space-y-1">
+                <li>
+                  <Link
+                    href="/planificare/nunti"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Nunți
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/planificare/botezuri"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Botezuri
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/planificare/corporate"
+                    className="text-gray-600 hover:text-rose-500"
+                  >
+                    Corporate
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <Link
+              href="/contact"
+              className="block text-lg font-medium text-gray-700 transition hover:text-rose-500"
+            >
+              Contact
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
