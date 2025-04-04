@@ -44,18 +44,16 @@ export default function Product({
 
       {/* Text Block */}
       <div className="mx-auto mt-6 max-w-4xl text-center">
-        <h2 className="text-2xl tracking-wide text-gray-800 uppercase">
-          {title}
-        </h2>
-        <p className="mt-1 mb-3 text-base text-gray-600">
+        <h2 className="text-2xl tracking-wide uppercase">{title}</h2>
+        <p className="mt-1 mb-3 text-base">
           {price} RON
           <span className="mx-auto mt-1 block h-[2px] w-3xl bg-gray-300"></span>
         </p>
-        <p className="mb-3 leading-relaxed text-gray-700">{description}</p>
+        <p className="mb-3 leading-relaxed">{description}</p>
         {cta && (
           <Link
             href="/contact"
-            className="text-accent font-medium hover:underline"
+            className="bg-accent rounded-sm px-2 py-1 font-medium transition-all duration-300 ease-in-out hover:bg-[#a31c1cd8] hover:underline"
           >
             {cta}
           </Link>
