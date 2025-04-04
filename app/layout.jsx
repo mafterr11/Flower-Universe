@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${cinzel.variable} ${sourceSans3.variable} overflow-x-hidden antialiased`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         <FixedSocials />
       </body>

@@ -21,7 +21,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-6 left-1/2 z-50 xl:w-[46rem] -translate-x-1/2 transform">
+    <header className="fixed top-6 left-1/2 z-50 -translate-x-1/2 transform xl:w-[46rem]">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -170,6 +170,7 @@ export default function Navbar() {
           >
             <Link
               href="/"
+              onClick={() => setIsOpen(!isOpen)}
               className="block text-lg font-medium text-gray-700 transition hover:text-rose-600"
             >
               Acasa
@@ -177,40 +178,85 @@ export default function Navbar() {
 
             {/* MAGAZIN SECTION */}
             <MobileDropdown title="Magazin">
-              <MobileSubLink href="/magazin/buchete-de-mireasa">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/magazin/buchete-de-mireasa"
+              >
                 Buchete de mireasă
               </MobileSubLink>
-              <MobileSubLink href="/magazin/seturi-de-lumanari">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/magazin/seturi-de-lumanari"
+              >
                 Seturi de lumânări
               </MobileSubLink>
-              <MobileSubLink href="/magazin/accesorii-florale">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/magazin/accesorii-florale"
+              >
                 Accesorii florale
               </MobileSubLink>
-              <MobileSubLink href="/magazin/papetarie">Papetărie</MobileSubLink>
-              <MobileSubLink href="/magazin/decoratiuni-de-craciun">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/magazin/papetarie"
+              >
+                Papetărie
+              </MobileSubLink>
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/magazin/decoratiuni-de-craciun"
+              >
                 Decorațiuni de Crăciun
               </MobileSubLink>
-              <MobileSubLink href="/magazin/aranjamente-de-masa">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/magazin/aranjamente-de-masa"
+              >
                 Aranjamente de masă
               </MobileSubLink>
-              <MobileSubLink href="/magazin/photocorner">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/magazin/photocorner"
+              >
                 Photocorner
               </MobileSubLink>
             </MobileDropdown>
 
             {/* PLANIFICARE SECTION */}
             <MobileDropdown title="Planificare">
-              <MobileSubLink href="/planificare/nunti">Nunți</MobileSubLink>
-              <MobileSubLink href="/planificare/botezuri">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/planificare/nunti"
+              >
+                Nunți
+              </MobileSubLink>
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/planificare/botezuri"
+              >
                 Botezuri
               </MobileSubLink>
-              <MobileSubLink href="/planificare/corporate">
+              <MobileSubLink
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                href="/planificare/corporate"
+              >
                 Corporate
               </MobileSubLink>
             </MobileDropdown>
 
             <Link
               href="/contact"
+              onClick={() => setIsOpen(!isOpen)}
               className="block text-lg font-medium text-gray-700 transition hover:text-rose-600"
             >
               Contact

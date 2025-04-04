@@ -37,11 +37,12 @@ export function MobileDropdown({ title, children }) {
   );
 }
 
-export function MobileSubLink({ href, children }) {
+export function MobileSubLink({ href, children, isOpen, setIsOpen }) {
   return (
     <li>
       <Link
         href={href}
+        onClick={() => setIsOpen(!isOpen)}
         className="block text-base text-gray-600 transition hover:text-rose-500"
       >
         {children}
