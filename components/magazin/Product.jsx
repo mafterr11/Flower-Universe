@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 export default function Product({
   title,
@@ -51,12 +52,15 @@ export default function Product({
         </p>
         <p className="mb-3 leading-relaxed">{description}</p>
         {cta && (
-          <Link
-            href="/contact"
-            className="bg-accent rounded-sm px-2 py-1 font-medium transition-all duration-300 ease-in-out hover:bg-[#a31c1cd8] hover:underline"
+          <Button
+            className={
+              "bg-accent rounded-sm px-2 py-1 font-medium transition-all duration-300 ease-in-out hover:scale-95 hover:bg-red-800 hover:underline"
+            }
           >
-            {cta}
-          </Link>
+            <Link href="/contact">
+              {cta}
+            </Link>
+          </Button>
         )}
       </div>
     </section>
