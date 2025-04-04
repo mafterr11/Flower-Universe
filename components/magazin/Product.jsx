@@ -45,7 +45,7 @@ export default function Product({
       {/* Text Block */}
       <div className="mx-auto mt-6 max-w-4xl text-center">
         <h2 className="text-2xl tracking-wide uppercase">{title}</h2>
-        <p className="mt-1 mb-3 text-base">
+        <p className="mt-1 mb-3 text-lg font-bold">
           {price} RON
           <span className="mx-auto mt-1 block h-[2px] w-3xl bg-gray-300"></span>
         </p>
