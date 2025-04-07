@@ -15,6 +15,7 @@
   --color-accentMain: #;
 
   --background-image-hero: url("/hero.jpg");
+  --background-image-magazin: url("/bg.png");
   --background-image-servicii: url("/servicii/servicii.jpg");
   --background-image-CTA: url("/CTA.jpg");
 
@@ -107,7 +108,8 @@
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     @apply leading-3 font-bold font-cinzel-sans;
   }
 
@@ -121,7 +123,7 @@
     @apply text-3xl font-bold leading-8;
   }
   h4 {
-    @apply text-[22px] font-semibold;
+    @apply text-[22px] font-semibold leading-8;
   }
   p {
     @apply leading-8 text-lg;

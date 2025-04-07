@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -45,7 +45,7 @@ export function MobileSubLink({ href, children, isOpen, setIsOpen }) {
         onClick={() => setIsOpen(!isOpen)}
         className="block text-base text-gray-600 transition hover:text-rose-500"
       >
-        {children}
+        - {children}
       </Link>
     </li>
   );
