@@ -8,7 +8,7 @@ const Botezuri = () => {
       title={"Lasă-ne pe noi să ne ocupăm de botezul micuțului tău"}
       className={"xl:max-w-[90%]"}
     >
-      <div className="mt-20 flex flex-col max-md:gap-y-5 gap-y-20 items-center">
+      <div className="mt-20 flex flex-col max-md:gap-y-5 gap-y-20 xl:items-center">
         {/* Image Section */}
         <div className="relative h-[400px] xl:w-1/2">
           <Image
