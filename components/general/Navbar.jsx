@@ -55,7 +55,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
                   <NavigationMenuTrigger className="relative bg-transparent px-2 text-base font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
-                    <Link href={"/magazin"}>Magazin</Link>
+                    Magazin
                   </NavigationMenuTrigger>
                 </motion.div>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
@@ -131,7 +131,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <motion.div whileHover={{ scale: 1.1, rotate: -1 }}>
                   <NavigationMenuTrigger className="relative bg-transparent px-2 text-base font-medium transition after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full">
-                    <Link href={"/planificare"}>Planificare</Link>
+                    Planificare
                   </NavigationMenuTrigger>
                 </motion.div>
                 <NavigationMenuContent className="rounded-lg bg-white p-4 shadow-md">
