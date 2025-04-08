@@ -5,7 +5,7 @@ export default function LayoutMagazin({
   className,
 }) {
   return (
-    <div className="bg-magazin pointer-events-none relative z-[-1] bg-cover bg-scroll bg-no-repeat md:bg-fixed">
+    <div className="bg-magazin relative bg-cover bg-scroll bg-no-repeat md:bg-fixed">
       <div className="absolute inset-0 bg-black/30" />
 
       <div

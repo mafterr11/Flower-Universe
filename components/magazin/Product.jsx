@@ -48,7 +48,7 @@ export default function Product({
 
         {cta && (
           <div className="mt-6">
-            <Button className="bg-accent rounded-sm px-4 py-2 text-sm sm:text-base font-medium transition-all duration-300 ease-in-out hover:scale-95 hover:bg-red-800 hover:underline">
+            <Button className="bg-accent rounded-sm px-4 py-2 text-sm sm:text-base font-medium transition-all duration-300 ease-in-out hover:scale-95 hover:bg-red-800 hover:underline cursor-pointer">
               <Link href="/contact">{cta}</Link>
             </Button>
           </div>
