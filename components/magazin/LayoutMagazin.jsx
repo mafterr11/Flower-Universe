@@ -5,7 +5,7 @@ export default function LayoutMagazin({
   className,
 }) {
   return (
-    <div className="bg-magazin pointer-events-none relative z-[-1] bg-cover  bg-no-repeat bg-fixed">
+    <div className="bg-magazin pointer-events-none relative z-[-1] bg-cover bg-scroll bg-no-repeat md:bg-fixed">
       <div className="absolute inset-0 bg-black/30" />
 
       <div
@@ -14,7 +14,7 @@ export default function LayoutMagazin({
         {/* Decorative ornament */}
 
         <h1 className="max-w-4xl text-4xl leading-8">{title}</h1>
-        {description && <p className="mt-2">{description}</p>} 
+        {description && <p className="mt-2">{description}</p>}
         <div className="xl:mt-24">{children}</div>
       </div>
     </div>
