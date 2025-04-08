@@ -14,7 +14,7 @@ export default function LayoutMagazin({
         {/* Decorative ornament */}
 
         <h1 className="max-w-4xl text-4xl leading-8">{title}</h1>
-        {description && <p className="mt-2">{description}</p>}
+        {description && <p className="mt-2">{description}</p>} 
         <div className="xl:mt-24">{children}</div>
       </div>
     </div>
