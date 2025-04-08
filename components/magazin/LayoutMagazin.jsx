@@ -11,4 +11,4 @@ export default function LayoutMagazin({ title, description, children, className 
       <div className="xl:mt-24">{children}</div>
     </div>
   );
-}
+} 
