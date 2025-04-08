@@ -6,7 +6,7 @@ const About = () => {
       {" "}
       {/* Set a height */}
       <h2>Despre noi</h2>
-      <div className="flex max-md:flex-col max-md:gap-y-5">
+      <div className="flex max-md:flex-col max-md:gap-y-5 max-md:text-center text-balance">
         {/* Image Section */}
         <div className="relative h-[500px] xl:w-1/2">
           <Image
