@@ -21,7 +21,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-6 left-1/2 z-50 w-[80%] -translate-x-1/2 transform xl:w-[46rem]">
+    <header className="fixed top-6 left-1/2 z-50 w-[90%] -translate-x-1/2 transform xl:w-[46rem]">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
