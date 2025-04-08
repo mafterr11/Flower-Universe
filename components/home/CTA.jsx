@@ -4,7 +4,7 @@ import { Send } from "lucide-react";
 
 const Cta = () => {
   return (
-    <section className="bg-CTA relative mb-44 bg-cover bg-fixed bg-[20rem_bottom] py-32 text-white max-md:bg-[20rem_center]">
+    <section className="bg-CTA relative mb-44 bg-cover bg-[-20rem_bottom] py-32 text-white max-md:bg-fixed max-md:bg-[20rem_center]">
       <div className="absolute -inset-[1px] bg-black/40" />
       <div className="relative mx-auto md:container md:max-xl:max-w-[90%]">
         <div className="flex flex-col items-center">
