@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cinzel.variable} ${sourceSans3.variable} overflow-x-hidden antialiased`}
+        className={`${cinzel.variable} ${sourceSans3.variable} antialiased`}
       >
         <Navbar />
         {children}
