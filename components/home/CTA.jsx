@@ -19,7 +19,7 @@ const Cta = () => {
           </div>
           <div>
             <Link href="/contact">
-              <Button size={"lg"} className="group gap-x-2">
+              <Button size={"lg"} className="group gap-x-2 ">
                 Contactează-ne
                 <Send
                   size={18}
